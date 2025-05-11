@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SimpleWeb</title>
+   <link rel="stylesheet" href="simpleWeb.css">
+</head>
+<body>
+   <div class="Form-div">
+      <div class="tabs">
+         <button class="tab-button active" data-tab="signup">Sign Up</button>
+         <button class="tab-button" data-tab="login">Login</button>
+      </div>
+
+      <!-- Sign-Up Form -->
+      <form id="signup-form" class="form active" action="#" method="post">
+         <h2>Registration</h2>
+         <div class="character">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+         </div>
+      
+         <div class="character">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+         </div>
+      
+         <div class="character">
+            <label for="newpassword">New Password</label>
+            <input type="password" name="newpassword" id="newpassword" placeholder="Enter a new password" required>
+         </div>
+         
+         <div class="character">
+            <label for="confpassword">Confirm Password</label>
+            <input type="password" name="confpassword" id="confpassword" placeholder="Confirm your password" required>
+         </div>
+         
+         <input type="submit" value="Sign Up" class="SignUp">
+      </form>
+
+      <!-- Login Form -->
+      <form id="login-form" class="form" action="#" method="post">
+         <h2>Login</h2>
+         <div class="character">
+            <label for="login-email">Email</label>
+            <input type="email" name="login-email" id="login-email" placeholder="Enter your email" required>
+         </div>
+
+         <div class="character">
+            <label for="login-password">Password</label>
+            <input type="password" name="login-password" id="login-password" placeholder="Enter your password" required>
+         </div>
+         
+         <input type="submit" value="Login" class="SignUp">
+      </form>
+   </div>
+
+   <script src="simpleWeb.js"></script>
+</body>
+</html>
